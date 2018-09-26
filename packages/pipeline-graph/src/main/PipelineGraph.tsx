@@ -1,16 +1,26 @@
 import * as React from 'react';
-import { decodeResultValue, getGroupForResult } from '../status/StatusIndicator';
-import { strokeWidth as nodeStrokeWidth } from '../status/SvgSpinner';
-import { TruncatingLabel } from '../TruncatingLabel';
+import { getGroupForResult } from './support/StatusIndicator';
+import { strokeWidth as nodeStrokeWidth } from './support/SvgSpinner';
+import { TruncatingLabel } from './support/TruncatingLabel';
 
-import { CompositeConnection, defaultLayout, LabelInfo, LayoutInfo, MATRIOSKA_PATHS, NodeColumn, NodeInfo, StageInfo } from './PipelineGraphModel';
+import {
+    CompositeConnection,
+    decodeResultValue,
+    defaultLayout,
+    LabelInfo,
+    LayoutInfo,
+    MATRIOSKA_PATHS,
+    NodeColumn,
+    NodeInfo,
+    StageInfo
+} from './PipelineGraphModel';
 
 import { layoutGraph } from './PipelineGraphLayout';
 
 type SVGChildren = Array<any>; // Fixme: Maybe refine this?
 
 // Generate a react key for a connection
-function connectorKey(leftNode, rightNode) {
+function connectorKey(leftNode: NodeInfo, rightNode: NodeInfo) {
     return 'c_' + leftNode.key + '_to_' + rightNode.key;
 }
 
@@ -619,7 +629,7 @@ export class PipelineGraph extends React.Component {
             overflow: 'visible', // So long labels can escape this component in layout
         };
 
-        const visualElements = []; // Buffer for children of the SVG
+        const visualElements:SVGChildren = []; // Buffer for children of the SVG
 
         connections.forEach(connection => {
             this.renderCompositeConnection(connection, visualElements);

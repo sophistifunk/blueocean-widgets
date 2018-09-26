@@ -131,7 +131,7 @@ function createNodeColumns(topLevelStages: Array<StageInfo> = []): Array<NodeCol
 /**
  * Walks the columns of nodes giving them x and y positions. Mutates the node objects in place for now.
  */
-function positionNodes(nodeColumns: Array<NodeColumn>, { nodeSpacingH, parallelSpacingH, nodeSpacingV, ypStart }) {
+function positionNodes(nodeColumns: Array<NodeColumn>, { nodeSpacingH, parallelSpacingH, nodeSpacingV, ypStart }: LayoutInfo) {
     let xp = nodeSpacingH / 2;
     let previousTopNode: NodeInfo | undefined;
 
