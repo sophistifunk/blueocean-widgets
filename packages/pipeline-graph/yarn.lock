@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@jenkins-cd/ux-widget-framework@file:../../../ux-widget-framework/dist/jenkins-cd-ux-widget-framework-0.0.1.tgz":
+  version "0.0.1"
+  resolved "file:../../../ux-widget-framework/dist/jenkins-cd-ux-widget-framework-0.0.1.tgz#017adbcf6c32acc587ee1b878c394302023cfe2a"
+
 "@types/node@*":
   version "10.11.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.11.0.tgz#ddd0d67a3b6c3810dd1a59e36675fa82de5e19ae"

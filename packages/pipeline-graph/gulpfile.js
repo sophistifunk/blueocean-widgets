@@ -1,10 +1,10 @@
 const gulp = require('gulp');
-// const debug = require('gulp-debug');
 const del = require('del');
 const ts = require("gulp-typescript");
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const yaml = require('gulp-yaml');
+const { createDistPackage } = require('@jenkins-cd/ux-widget-framework/build/distPackage');
 
 const tsProject = ts.createProject('tsconfig.json');
 
@@ -21,7 +21,6 @@ gulp.task("ts", () =>
 
 // Create the inner package.json within /dist for publishing
 gulp.task('make-dist-package', () => {
-    const { createDistPackage } = require('@expantra/widget-framework-poc/build/distPackage');
     return createDistPackage('./package.json', './dist/package.json')
 });
 
