@@ -4,15 +4,15 @@
         "moduleResolution": "node",
         "target": "es6",
         "declaration": true,
-        "outDir": "./dist",
+        "outDir": "./dist/lib",
         "preserveConstEnums": true,
         "forceConsistentCasingInFileNames": true,
         "jsx": "react",
         "experimentalDecorators": true,
         "strict": true,
         "sourceMap": true,
-        "baseUrl": "src",
-        "rootDir": "src"      
+        "baseUrl": "src/main",
+        "rootDir": "src/main"      
     },
     "include": [
         "src/main/**/*.ts",

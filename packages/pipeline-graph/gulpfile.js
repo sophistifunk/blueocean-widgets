@@ -6,7 +6,7 @@ const sass = require('gulp-sass');
 const yaml = require('gulp-yaml');
 const { createDistPackage } = require('@jenkins-cd/ux-widget-framework/build/distPackage');
 
-const tsProject = ts.createProject('tsconfig.json');
+const tsProject = ts.createProject('tsConfig.json');
 
 gulp.task('clean', () =>
     del('dist')
@@ -16,7 +16,7 @@ gulp.task('clean', () =>
 gulp.task("ts", () =>
     tsProject.src()
         .pipe(tsProject())
-        .pipe(gulp.dest("./dist"))
+        .pipe(gulp.dest(tsProject.config.compilerOptions.outDir))
 );
 
 // Create the inner package.json within /dist for publishing
