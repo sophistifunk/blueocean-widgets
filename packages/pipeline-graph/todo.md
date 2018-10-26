@@ -2,7 +2,7 @@
 
 ## Immediate
 
-* [ ] Move over unit tests from BO codebase
+* [ ] Fix up gulp dist issue
 * [ ] Validate / fix up stylesheet compilation
 * [ ] Make sure the typedefs being generated are correct
 * [ ] Set up prettier
@@ -13,3 +13,7 @@
 ## Later?
 
 * [ ] Docgen - requires fw work, and the longer we put this off the more detailed standard for docs will be.
+
+# Done
+
+* [X] Move over unit tests from BO codebase
