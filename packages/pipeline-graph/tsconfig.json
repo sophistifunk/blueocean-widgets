@@ -1,24 +1,13 @@
 {
+    // This config is the default found by editor / language server, includes tests
+    "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "module": "es6",
-        "moduleResolution": "node",
-        "target": "es6",
-        "declaration": true,
-        "outDir": "./dist/lib",
-        "preserveConstEnums": true,
-        "forceConsistentCasingInFileNames": true,
-        "jsx": "react",
-        "experimentalDecorators": true,
-        "strict": true,
-        "sourceMap": true,
-        "baseUrl": "src/main",
-        "rootDir": "src/main"      
+        "outDir": "./build",
     },
     "include": [
         "src/main/**/*.ts",
-        "src/main/**/*.tsx"
-    ],
-    "exclude": [
-        "node_modules"
+        "src/main/**/*.tsx",
+        "src/test/**/*.ts",
+        "src/test/**/*.tsx",
     ]
 }
