@@ -6,7 +6,7 @@ const sass = require('gulp-sass');
 const yaml = require('gulp-yaml');
 const { createDistPackage } = require('@jenkins-cd/ux-widget-framework/build/distPackage');
 
-const tsProject = ts.createProject('tsConfig.json');
+const tsProject = ts.createProject('tsconfig.dist.json');
 
 gulp.task('clean', () =>
     del('dist')
