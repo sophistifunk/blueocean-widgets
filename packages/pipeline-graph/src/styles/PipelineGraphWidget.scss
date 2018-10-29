@@ -114,8 +114,8 @@
 
 .progress-spinner.running circle.inner {
     display: block;
-    fill: $progress-pulse-color;
-    stroke: $progress-pulse-color;
+    fill: $brand-info-lite;
+    stroke: $brand-info-lite;
 }
 
 @keyframes progress-spinner-pulsate {
