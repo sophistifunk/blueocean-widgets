@@ -2,8 +2,7 @@
 
 ## Immediate
 
-* [ ] Fix up gulp dist issue
-* [ ] Validate / fix up stylesheet compilation
+* [ ] Clean out any styles / SCSS vars not being used by this code
 * [ ] Make sure the typedefs being generated are correct
 * [ ] Set up prettier
 * [ ] Set up Storybook, move stories from BO codebase
@@ -17,3 +16,5 @@
 # Done
 
 * [X] Move over unit tests from BO codebase
+* [X] Fix up gulp dist issue
+* [X] Validate / fix up stylesheet compilation
