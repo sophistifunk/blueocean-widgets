@@ -18,16 +18,24 @@
     "url": "git+https://github.com/sophistifunk/blueocean-widgets.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "bugs": {
     "url": "https://github.com/sophistifunk/blueocean-widgets/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
     "@jenkins-cd/ux-widget-framework": "/Users/josh/cloudbees/ux-widget-framework/dist/jenkins-cd-ux-widget-framework-0.0.1.tgz",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/addon-links": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.0",
     "@types/jest": "^23.3.7",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "babel-loader": "^8.0.4",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1",
@@ -35,13 +43,15 @@
     "gulp-typescript": "^5.0.0-alpha.3",
     "gulp-yaml": "^2.0.2",
     "jest": "^23.6.0",
+    "react": "16",
+    "react-dom": "16",
     "run-sequence": "^2.2.1",
     "ts-jest": "^23.10.4",
     "typescript": "^3.0.3"
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "15",
-    "react-dom": "15"
+    "react": "16",
+    "react-dom": "16"
   }
 }
