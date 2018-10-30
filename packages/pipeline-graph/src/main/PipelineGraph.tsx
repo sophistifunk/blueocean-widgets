@@ -646,12 +646,14 @@ export class PipelineGraph extends React.Component {
         }
 
         return (
-            <div style={outerDivStyle as any} className="PipelineGraph">
-                <svg width={measuredWidth} height={measuredHeight}>
-                    {visualElements}
-                </svg>
-                {bigLabels.map(label => this.renderBigLabel(label))}
-                {smallLabels.map(label => this.renderSmallLabel(label))}
+            <div className="PipelineGraph-container">
+                <div style={outerDivStyle as any} className="PipelineGraph">
+                    <svg width={measuredWidth} height={measuredHeight}>
+                        {visualElements}
+                    </svg>
+                    {bigLabels.map(label => this.renderBigLabel(label))}
+                    {smallLabels.map(label => this.renderSmallLabel(label))}
+                </div>
             </div>
         );
     }

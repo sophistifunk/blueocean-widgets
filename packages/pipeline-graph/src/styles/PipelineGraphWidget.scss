@@ -1,5 +1,7 @@
 // From blueocean/blueocean-dashboard/src/main/less/pipeline-run-graph.less
 
+// TODO: put PipelineGraph-container div into this codebase
+
 .PipelineGraph-container {
     display: flex;
     flex-direction: column;
@@ -18,10 +20,6 @@
 .result-status-glyph {
     stroke: none;
     fill: #fff;
-}
-
-.svgResultStatus.no-background .circle-bg {
-    opacity: 0;
 }
 
 .svgResultStatus {
